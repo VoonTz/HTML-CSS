@@ -1,4 +1,4 @@
-# SENAI
+# HTML e CSS
 
 Esse foi um designer que eu fiz com o ituito de aprender a mexer com HTML e CSS.
 
