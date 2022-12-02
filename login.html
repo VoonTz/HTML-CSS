@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="animation.css">
+    <title>Login</title>
+</head>
+<body id="trocar">
+    <div class="container">
+        <main>
+            <div id="boxe" class="box">
+                <form>
+                    <div class="user">
+                        <div class="minibox"></div>
+                        <h1>Login</h1>
+                        <label>Nome</label>
+                        <input type="text">
+                    </div>
+                    <div class="user">
+                        <label>Senha</label>
+                        <input type="password">
+                    </div>
+                </form>
+                <div class="user">
+                    <a href="#">Login</a>
+                </div>
+                <div class="help">
+                    <a href="#">Perdi minha senha</a>
+                    <a href="#">Signup</a>
+                </div>
+            </div>
+            <div class="chargeColor">
+                <label>Verde</label>
+                <input onclick="Verde()" type="button">
+                <label>Vermelho</label>
+                <input onclick="Vermelho()" type="button">
+                <label>Amarelo</label>
+                <input onclick="Amarelo()" type="button">
+                <label>Reset</label>
+                <input onclick="Reset() "type="button">
+            </div>
+        </main>
+        <script type="text/javascript">
+            function Verde(){
+		         document.getElementById('trocar').style.backgroundColor = "#72bf3f"
+                 document.getElementById('boxe').style.backgroundColor = "#97e99f"
+	        }
+            function Vermelho(){
+		         document.getElementById('trocar').style.backgroundColor = "#bf3f3f"
+                 document.getElementById('boxe').style.backgroundColor = "#e99797"
+	        }
+            function Amarelo(){
+		         document.getElementById('trocar').style.backgroundColor = "#dfeb94"
+                 document.getElementById('boxe').style.backgroundColor = "#e2e997"
+	        }
+            function Reset(){
+		         document.getElementById('trocar').style.backgroundColor = "#3fbfb9"
+                 document.getElementById('boxe').style.backgroundColor = "#97e9e9"
+	        }
+        </script>
+    </div>  
+</body>
+</html>

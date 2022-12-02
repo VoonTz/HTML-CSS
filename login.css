@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap');
+
+*{
+    font-family: Syne;
+    text-decoration: none;
+    color: black;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #3fbfb9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body:hover{
+    transition: 3s;
+}
+
+.container{
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.minibox{
+    display: flex;
+
+    position: relative;
+    top: 30px;
+    background: transparent;
+    width: 12px;
+    height: 20px;
+    border: 1px solid black;
+    background: #d4f3f1;
+}
+
+h1{
+    position: relative;
+    left: 30px;
+    top: -5px;
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.box{
+    background: rgb(151, 233, 233);
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    padding: 40px;
+    /* transition: 4s; */
+}
+
+.box :hover{
+    transition: 5s;
+}
+
+.user h1{
+    padding: 5px;
+    margin: 0; 
+}
+.user{
+    padding: 15px;
+}
+.user input{
+    width: 100%;
+    padding: 4px 0;
+}
+.user a{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+    background: #d4f3f1;
+}
+.help{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px;
+    font-size: 13px;
+}
+
+.help :hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+main{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.chargeColor{
+    height: 290px;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    background-color: #d4f3f1;
+    padding: 6px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (max-width:700px){
+   
+    .user h1{
+        padding: 0;
+        left: 0;
+    }
+    .minibox{
+        display: none;
+    }
+    
+    .chargeColor{
+        font-size: 10px;
+    }
+    .help{
+        gap: 10px;   
+    }
+
+    .container{
+        flex-direction: column;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+    }
+}
